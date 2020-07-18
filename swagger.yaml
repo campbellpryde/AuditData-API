@@ -503,7 +503,7 @@ components:
           $ref: '#/components/schemas/System_Quantity'
         Inventory_Cost:
           $ref: '#/components/schemas/Inventory_Cost'
-        Functional_Currency Code:
+        Functional_Currency_Code:
           $ref: '#/components/schemas/Functional_Currency_Code'
 
 
@@ -584,7 +584,7 @@ components:
           $ref: '#/components/schemas/Functional_Currency_Code'
         Transaction_Amount:
           $ref: '#/components/schemas/Transaction_Amount'
-        Transaction_Currency _Code:
+        Transaction_Currency_Code:
           $ref: '#/components/schemas/Transaction_Currency_Code'
         Functional_Balance:
           $ref: '#/components/schemas/Functional_Balance'
@@ -1968,7 +1968,7 @@ components:
       description: The date payment is due from the customer. Not all transactions will have a due date. May be set to NULL, if there is no due date. EXAMPLE Credit memos. Aging of a receivable is usually calculated based on this date.
       example: '2018-12-31'
 
-    Functional_ Amount:
+    Functional_Amount:
      type: number
      description: Transaction monetary amount recorded in the functional or group currency. No multi-currency translation should be performed on this amount because all transactions are recorded in a single currency.
      example: 100
